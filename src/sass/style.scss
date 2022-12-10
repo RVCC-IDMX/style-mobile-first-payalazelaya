@@ -21,6 +21,7 @@ body {
     grid-template-columns: 1fr;
     gap: 1em;
 }
+
 /* SVG */
 svg {
     max-width: 1rem;
@@ -30,15 +31,19 @@ svg {
 
 body {
     font-family: var.$body-font;
+    line-height: 1.5em;
 }
 
 h1 {
     font-family: var.$main-header-font;
     font-size: 5rem;
+    line-height: 0.8em;
+    letter-spacing: 0.1rem;
 }
 
 h2, h3, h4 {
     font-family: var.$sub-header-font;
+    line-height: 1.1em;
 }
 
 h2 {
