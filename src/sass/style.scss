@@ -2,6 +2,14 @@
 @use "./base/reset";
 @use "./abstracts/variables" as var;
 
+body {
+    padding: 0 1em;
+}
+
+svg {
+    max-width: 1rem;
+}
+
 /* Typography */
 
 body {
