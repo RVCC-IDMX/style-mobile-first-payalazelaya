@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Bree+Serif&display=swap');
 
-$bg-color: gold;
+$bg-color: hsl(63, 98%, 82%);
 $bg-very-light: func.tint($bg-color, 50%);
 $bg-light: func.tint($bg-color, 25%);
 $bg-medium: $bg-color;
@@ -12,7 +12,7 @@ $bg-dark: func.shade($bg-color, 25%);
 $bg-very-dark: func.shade($bg-color, 50%);
 
 
-$primary-color: rebeccapurple;
+$primary-color: hsl(217, 84%, 15%);
 $primary-very-light: func.tint($primary-color, 50%);
 $primary-light: func.tint($primary-color, 25%);
 $primary-medium: $primary-color;

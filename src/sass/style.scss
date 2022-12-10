@@ -27,8 +27,13 @@ svg {
     max-width: 1rem;
 }
 
-/* Typography */
+/* Color Styling */
+body {
+    color: var.$primary-color;
+    background: var.$bg-color;
+}
 
+/* Typography */
 body {
     font-family: var.$body-font;
     line-height: 1.5em;
