@@ -2,10 +2,26 @@
 @use "./base/reset";
 @use "./abstracts/variables" as var;
 
+/* Spacing Styling */
 body {
     padding: 0 1em;
+    max-width: 60rem;
 }
 
+p, li {
+    max-width: 60ch;
+}
+
+p {
+    padding-block: 0.5em;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+/* SVG */
 svg {
     max-width: 1rem;
 }
