@@ -78,7 +78,6 @@ nav ul li a{
 nav ul li a {
   display: inline-block;
   position: relative;
-  
 }
 
 nav ul li a:after {
@@ -86,17 +85,17 @@ nav ul li a:after {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 3px;
   bottom: 0;
   left: 0;
   background-color: var.$lighter-border-underline;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.20s ease-out;
 }
 
 nav ul li a:hover:after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: left;
 }
 
 /* Spacing Styling */
