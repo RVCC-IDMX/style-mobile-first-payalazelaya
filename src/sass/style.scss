@@ -152,12 +152,11 @@ h4 {
 /* Footer Styling */
 .page-footer {
     line-height: 1.5em;
-    box-sizing: content-box;
+    border: thick double var.$primary-color;
     background-color: var.$bg-color;
     padding: 3rem;
-
+    margin-block-end: 1em;
     max-width: 100%;
-    min-width: 320px;
     place-content: center;
     justify-items: center;
 }
