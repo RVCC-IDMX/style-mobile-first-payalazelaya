@@ -196,8 +196,7 @@ h4 {
     color: var.$primary-color;
     padding: 0 1em;
     max-width: 60rem;
-    min-width: 40ch;
-    margin-block-end: 2em;
+    margin-block-end: 3em;
     border: 4px solid var.$bg-color;
     border-radius: 4px;
     box-shadow: 5px 5px var.$primary-color;
@@ -260,24 +259,6 @@ blockquote {
     box-shadow: 4px 4px var.$primary-color;
 }
 
-#files .container {
-    margin-block: 2em;
-    padding-inline: 1.5em;
-    padding-block: 2em;
-    line-height: 2;
-    background-color: var.$sixth-color;
-    border-radius: 4px;
-    box-shadow: 4px 4px var.$primary-color;
-}
-
-#files .container a:after{
-    content: "";
-    display: block;
-    height: 0;
-    width: 1px;
-    line-height: 1.5;
-}
-
 /* Aside Styling */
 .profile .container {
     display: grid; 
@@ -315,6 +296,25 @@ li.profile-author::marker{
 #files {
     margin-block-end: 1em;
 }
+
+#files .container {
+    margin-block: 2em;
+    padding-inline: 1.5em;
+    padding-block: 2em;
+    line-height: 2;
+    background-color: var.$sixth-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color;
+}
+
+#files .container a:after{
+    content: "";
+    display: block;
+    height: 0;
+    width: 1px;
+    line-height: 1.5;
+}
+
 .page-footer{
     display: flex;
 }
