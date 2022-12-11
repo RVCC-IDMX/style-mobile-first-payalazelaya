@@ -9,7 +9,7 @@ header {
   border: thick double var.$primary-color;
   min-height: 80vh;
   place-content: center;
-  border-radius: 0.5%;
+  border-radius: 4px;
   padding-inline: 2rem;
   min-width: 50vh;
   padding-block: 1rem;
@@ -30,6 +30,43 @@ nav ul {
 
 nav ul li {
   margin-inline: 1.5rem;
+}
+
+nav ul {
+  background-color: var.$tertiary-color;
+  padding: 0.5rem;
+  padding-block: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px var.$primary-color;
+  margin-block: 3rem;
+}
+
+nav ul li a{
+  text-decoration: 3px underline var.$border-underline;
+}
+
+nav ul li a {
+  display: inline-block;
+  position: relative;
+  
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var.$darker-border-underline;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* Spacing Styling */
