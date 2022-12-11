@@ -19,7 +19,7 @@ header {
   align-items: center;
   border-radius: 4px;
   padding-inline: 2rem;
-  min-width: 50vh;
+  min-width: 60vh;
   padding-block: 1rem;
   margin-inline: 15px;
 }
@@ -135,7 +135,8 @@ svg {
 /* Color Styling */
 body {
     color: var.$primary-color;
-    background-image: url("/images/background.jpg")
+    background-image: url("/images/background.jpg");
+    background-repeat: repeat-y;
 }
 
 /* Typography */
@@ -195,23 +196,11 @@ h4 {
     color: var.$primary-color;
     padding: 0 1em;
     max-width: 60rem;
-    min-width: 50vh;
+    min-width: 40ch;
     margin-block-end: 2em;
     border: 4px solid var.$bg-color;
     border-radius: 4px;
     box-shadow: 5px 5px var.$primary-color;
-}
-
-#about ul {
-    margin: 0;
-    padding: 0.7rem;
-    padding-inline: 20px;
-    padding-inline-end: -20px;
-    padding-block: 1rem;
-    list-style-type: none;
-    background-color: var.$bg-color;
-    border-radius: 4px;
-    box-shadow: 4px 4px var.$primary-color;
 }
 
 section.container {
@@ -232,7 +221,95 @@ blockquote {
     box-shadow: 4px 4px var.$primary-color;
 }
 
+#about ul {
+    margin: 0;
+    padding: 1rem;
+    list-style-type: none;
+    padding-inline: 2em;
+    padding-block: 1rem;
+    background-color: var.$bg-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color;
+}
+
+#about li {
+    position: relative;
+}
+
+#about li::before {
+    content: "";
+	display: block;
+	border-radius: 5px;
+	width: 8px;
+	height: 8px;
+	background-color: var.$primary-color;
+	position: absolute;
+	top: 14px;
+	left: -10px;
+	transform: translate(-50%, -50%);
+}
+
+#contribute ol {
+    line-height: 1.9;
+    margin: 0;
+    padding: 1rem;
+    padding-inline: 2em;
+    padding-block: 1rem;
+    background-color: var.$bg-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color;
+}
+
+#files .container {
+    margin-block: 2em;
+    padding-inline: 1.5em;
+    padding-block: 2em;
+    line-height: 2;
+    background-color: var.$sixth-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color;
+}
+
+#files .container a:after{
+    content: "";
+    display: block;
+    height: 0;
+    width: 1px;
+    line-height: 1.5;
+}
+
 /* Aside Styling */
+.profile .container {
+    display: grid; 
+    justify-items: center;
+    margin-block-end: 2em;
+    padding-block-end: 2em;
+    background-color: var.$sixth-color;
+    border: 4px solid var.$bg-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color;
+}
+
+#styles .container {
+    display: grid;
+    justify-items: center;
+    margin-block-end: 2em;
+    padding-block-end: 2em;
+    background-color: var.$sixth-color;
+    border: 4px solid var.$bg-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color;
+}
+
+li.profile-title::marker{
+color: var.$primary-dark;
+}
+li.profile-author::marker{
+  color: var.$primary-dark;
+  }
+    li.profile-website::marker{
+      color: var.$primary-dark;
+      }
 
 /* Footer Styling */
 #files {
