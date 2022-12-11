@@ -2,6 +2,12 @@
 @use "./base/reset";
 @use "./abstracts/variables" as var;
 
+
+/* Navigation Bar Styling */
+li {
+    display: inline;
+}
+
 /* Spacing Styling */
 body {
     padding: 0 1em;
@@ -30,7 +36,7 @@ svg {
 /* Color Styling */
 body {
     color: var.$primary-color;
-    background: var.$bg-color;
+    background-image: url("/images/background.jpg")
 }
 
 /* Typography */
