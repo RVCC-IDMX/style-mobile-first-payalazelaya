@@ -4,8 +4,19 @@
 
 
 /* Navigation Bar Styling */
-li {
-    display: inline;
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr));
+  list-style: none;
+  padding-inline: 1rem;
+  grid-gap: 1rem;
+  min-width: 30ch;
+  margin: 3vh auto;
+  max-width: 100%;
+}
+
+nav ul li {
+  margin-inline: 1.5rem;
 }
 
 /* Spacing Styling */
@@ -87,3 +98,4 @@ h4 {
     transform: translateX(-50%);
     opacity: 1;
 }
+
