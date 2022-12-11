@@ -2,6 +2,19 @@
 @use "./base/reset";
 @use "./abstracts/variables" as var;
 
+/* Header Styling */
+header {
+  margin-block-start: 3rem;
+  background-color: var.$bg-color;
+  border: thick double var.$primary-color;
+  min-height: 80vh;
+  place-content: center;
+  border-radius: 0.5%;
+  padding-inline: 2rem;
+  min-width: 50vh;
+  padding-block: 1rem;
+  margin-inline: 20px ;
+}
 
 /* Navigation Bar Styling */
 nav ul {
