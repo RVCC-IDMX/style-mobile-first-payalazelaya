@@ -12,9 +12,10 @@ li {
 body {
     padding: 0 1em;
     max-width: 60rem;
+    min-width: 40ch;
 }
 
-p, li {
+.container {
     max-width: 60ch;
 }
 
