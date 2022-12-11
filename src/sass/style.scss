@@ -13,7 +13,24 @@ header {
   padding-inline: 2rem;
   min-width: 50vh;
   padding-block: 1rem;
-  margin-inline: 20px ;
+  margin-inline: 20px;
+
+}
+
+header .link-github {
+    background-color: var.$fourth-color;
+    padding: 0.3rem;
+    padding-block: 1rem;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$secondary-color;
+}
+
+header .link-github a:link {
+    color: white;
+}
+
+header .link-github a:visited {
+    color: black;
 }
 
 /* Navigation Bar Styling */
@@ -117,6 +134,8 @@ body {
 
 h1 {
     font-family: var.$main-header-font;
+    font-style: italic;
+    font-weight: lighter;
     font-size: 5rem;
     line-height: 0.8em;
     letter-spacing: 0.1rem;
@@ -172,4 +191,16 @@ h4 {
     place-content: center;
     justify-items: center;
 }
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.02ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.02ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
 
