@@ -149,3 +149,16 @@ h4 {
     opacity: 1;
 }
 
+/* Footer Styling */
+.page-footer {
+    line-height: 1.5em;
+    box-sizing: content-box;
+    background-color: var.$bg-color;
+    padding: 3rem;
+
+    max-width: 100%;
+    min-width: 320px;
+    place-content: center;
+    justify-items: center;
+}
+
