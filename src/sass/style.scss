@@ -11,17 +11,19 @@
 }
 
 /* Header Styling */
-header {
+header .container {
   margin-block-start: 3rem;
   background-color: var.$bg-color;
   border: thick double var.$primary-color;
-  min-height: 50vh;
-  align-items: center;
+  //min-height: 50vh;
+  align-items: flex-start;
   border-radius: 4px;
   padding-inline: 2rem;
   min-width: 60vh;
-  padding-block: 1rem;
+  margin-block: 1rem;
   margin-inline: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 header h2 {
@@ -38,8 +40,8 @@ header .container p {
 header .link-github {
     background-color: var.$bg-light;
     padding: 0.7rem;
-    padding-block: 1rem;
     margin-block-end: 4rem;
+    width: 10rem;
     text-decoration: none;
     outline: 1px solid var.$secondary-color;
     border-radius: 4px;
@@ -110,7 +112,7 @@ nav ul li a:hover:after {
 /* Spacing Styling */
 body {
     padding: 0 1em;
-    max-width: 60rem;
+    //max-width: 60rem;
 }
 
 .container {
@@ -260,22 +262,38 @@ blockquote {
 }
 
 /* Aside Styling */
+.profile {
+    display: flex;
+    justify-content: center;
+    width: 60ch;
+}
+
 .profile .container {
+    max-width: fit-content;
     display: grid; 
     justify-items: center;
-    margin-block-end: 2em;
-    padding-block-end: 2em;
+    margin-block: 2em;
+    padding: 2em;
+    padding-inline-end: 4em;
     background-color: var.$sixth-color;
     border: 4px solid var.$bg-color;
     border-radius: 4px;
     box-shadow: 4px 4px var.$primary-color;
 }
 
+#styles {
+    display: flex;
+    justify-content: center;
+    width: 60ch;
+}
+
 #styles .container {
+    max-width: fit-content;
     display: grid;
     justify-items: center;
-    margin-block-end: 2em;
-    padding-block-end: 2em;
+    margin-block: 2em;
+    padding: 2em;
+    padding-inline-end: 3em;
     background-color: var.$sixth-color;
     border: 4px solid var.$bg-color;
     border-radius: 4px;
